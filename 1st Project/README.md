@@ -5,9 +5,9 @@ _Team for this project: [@prncjs](https://github.com/prncjs) [@jplaudir8](https:
 
 ## UI Designs
 
-**Company Logo**
+**Color Scheme**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/CompanyLogo.png" height="300" alt="" title="Company Logo">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/ColorScheme.png" width="600" alt="" title="Color Scheme Used">
 </p>
 
 **Fonts**
@@ -15,9 +15,9 @@ _Team for this project: [@prncjs](https://github.com/prncjs) [@jplaudir8](https:
     <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Fonts.png" width="540" alt="" title="Fonts Used">
 </p>
 
-**Color Scheme**
+**Company Logo**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/ColorScheme.png" width="600" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/CompanyLogo.png" height="300" alt="" title="Company Logo">
 </p>
 
 **Header**
