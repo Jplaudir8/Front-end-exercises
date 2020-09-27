@@ -22,26 +22,31 @@ _Team for this project: [@prncjs](https://github.com/prncjs) [@jplaudir8](https:
 
 **Header**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Header.png" width="900" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Header.png" width="900" alt="" title="Header">
 </p>
 
 **Footer**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Footer.png" width="900" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Footer.png" width="900" alt="" title="Footer">
 </p>
 
 ## Pages
 **Home Page**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Home%20Page.png" width="900" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Home%20Page.png" width="900" alt="" title="Home Page">
 </p>
 
 **Menu Page**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Menu%20Page.png" width="900" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Menu%20Page.png" width="900" alt="" title="Menu Page">
 </p>
 
 **Our Story Page**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Our%20Story%20Page.png" width="900" alt="" title="Color Scheme Used">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Our%20Story%20Page.png" width="900" alt="" title="Our Story Page">
+</p>
+
+**Locations Page**
+<p align="center">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Locations.png" width="900" alt="" title="Locations Page">
 </p>
