@@ -1,4 +1,4 @@
-# Content of Repository
+# Projects
 
 **1st Project**  
 Company that sells fresh foods.  
