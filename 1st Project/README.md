@@ -48,5 +48,5 @@ _Team for this project: [@prncjs](https://github.com/prncjs) [@jplaudir8](https:
 
 **Locations Page**
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Locations.png" width="900" alt="" title="Locations Page">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Locations%20Page.png" width="900" alt="" title="Locations Page">
 </p>
