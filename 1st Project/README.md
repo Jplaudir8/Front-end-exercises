@@ -50,3 +50,18 @@ _Team for this project: [@prncjs](https://github.com/prncjs) [@jplaudir8](https:
 <p align="center">
     <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Locations%20Page.png" width="900" alt="" title="Locations Page">
 </p>
+
+**Catering Page**
+<p align="center">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Catering.png" width="900" alt="" title="Catering Page">
+</p>
+
+**Health and Safety Page**
+<p align="center">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Health%20and%20Safety.png" width="900" alt="" title="Health and Safety Page">
+</p>
+
+**Order Now Pop Up Page**
+<p align="center">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/1st%20Project/UI%20Designs%20Images/Order%20Now%20Pop%20Up.png" width="600" alt="" title="Order Now Pop Up Page">
+</p>
