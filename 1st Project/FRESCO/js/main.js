@@ -1,3 +1,5 @@
+/* Carousel */
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -34,3 +36,5 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block"; // Shows desired image.
     dots[slideIndex - 1].className += " active"; // Changes dot color to look active.
 }
+
+/* Carousel EOF */
