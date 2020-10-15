@@ -277,9 +277,19 @@ a {
 .px-1 {
   padding: 0 100px;
 }
+
+a.current {
+  color: var(--light-green-color);
+}
+
 .img-header {
   width: 100%;
   height: 70vh;
+}
+
+#pages-body {
+  margin: 20px 40px 50px;
+  padding: 40px 100px;
 }
 
 .grid-container {
@@ -294,6 +304,10 @@ a {
 
 .grid-container__text {
   margin: 30px 100px;
+}
+
+.grid-container__text h2{
+  font-weight: 500;
 }
 
 .grid-container p {
@@ -314,9 +328,16 @@ a {
   font-weight: 600;
 }
 
-#catering-body {
-  margin: 20px 40px;
-  padding: 20px 100px;
+
+/* Health and Safety */
+
+.p-container ul{ 
+  text-align: center;
+  line-height: 2;
+}
+
+.p-container h2, h3 {
+  font-weight: 500;
 }
 
 /* ---------------------------------------------------------------- */
