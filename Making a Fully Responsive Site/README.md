@@ -9,6 +9,10 @@
 ### Home Page
 
 <p align="center">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Making%20a%20Fully%20Responsive%20Site/ArrangementOfPage1_NoBoxes.png" width="500" alt="" title="Arrangement">
+</p>
+
+<p align="center">
     <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Making%20a%20Fully%20Responsive%20Site/ArrangementOfPage1.png" width="500" alt="" title="Arrangement">
 </p>
 
