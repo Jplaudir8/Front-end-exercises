@@ -33,10 +33,30 @@ h1 {
     Layout
    ================== */
 
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
-    text-align: center;
     background: #f8f8f8;
     padding: 2em 0; /* 1em=16px */
+}
+
+@media (max-width: 720px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
 }
 
 /* navigation */
@@ -70,9 +90,9 @@ nav ul {
 nav li {
     /* border: 2px dotted orange; */
 
-    /* ... So we will instead space out our 
-    <li> elements by adding margin */
-    margin: 0 1em;
+    /* ... instead we will space out our 
+    <li> elements by adding margin*/
+    margin-left: 2em;
 }
 
 nav a {
@@ -94,4 +114,14 @@ nav a:focus {
 
 .current-page:hover {
     color: #707070;
+}
+
+@media (max-width: 720px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
 }
