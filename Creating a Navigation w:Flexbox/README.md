@@ -1,11 +1,11 @@
 # Layout Arrangement
 
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Reviewing%20Flexbox/Arrangement.png" width="900" alt="" title="Arrangement">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Creating%20a%20Navigation%20w:Flexbox/Arrangement.png" width="900" alt="" title="Arrangement">
 </p>
 
 # Color Scheme and Fonts
 
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Reviewing%20Flexbox/ColorandFontScheme.png" width="200" alt="" title="Color and Font Scheme">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Creating%20a%20Navigation%20w:Flexbox/ColorandFontScheme.png" width="500" alt="" title="Color and Font Scheme">
 </p>
