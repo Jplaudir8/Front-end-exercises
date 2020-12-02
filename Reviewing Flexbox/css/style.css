@@ -43,19 +43,35 @@ img {
 
 .columns {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 1em 0;
 }
 
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
 .col-1 {
-    width: 25%;
+    width: 20%; /* -5% on each col so that justify-content can have space to work */
 }
 
 .col-2 {
-    width: 50%;
+    width: 45%; /* -5% on each col so that justify-content can have space to work */
 }
 
 .col-3 {
-    width: 75%;
+    width: 70%; /* -5% on each col so that justify-content can have space to work */
+}
+
+@media (max-width: 600px) {
+    .col-1, 
+    .col-2, 
+    .col-3 {
+        width: 100%;
+    }
 }
 
 .col-bg {
