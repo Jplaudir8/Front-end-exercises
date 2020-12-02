@@ -5,32 +5,71 @@
  */
 
 body {
-    
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.site-title h1 {
+/* ==================
+    Typography
+   ================== */
+
+h1 {
     font-family: 'Lora', serif;
-    font-size: 3.375rem;
+    font-weight: 400;
     color: #143774;
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-weight: 700; /* designers call it bold */
+    color: #1792d2;
+    font-size: .75rem;
 }
 
 header {
-    background: #F8F8F8;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 2em 0; /* 1em=16px */
 }
 
-.subtitle, nav ul li {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-nav ul li {
-    color: #707070;
+nav ul {
+    /* border: 1px solid magenta; */
+    
     list-style: none;
+    padding: 0;
+    display: flex;
+    /* People often try using text-align: center; but don't ever 
+    forget that this property looks up for the last children and 
+    aligns them relative to their direct parent, which in this 
+    case if applied here, it would center the <a> elements relative to 
+    the width of the <li>, which has been shrunk because of the flex 
+    property applied to the <ul>, meaning the available width is 
+    almost the size of the <a>, hence the text-centering would not
+    be noticeable. That is why we use justify-content: */
+    justify-content: center; 
+
+    /* 
+    justify-content: space-between;
+    width: 350px;
+    
+    If we space out our <li>'s with these two properties
+    it would have looked good but what if we add more pages 
+    to our site? we would have to come and make changes here again... 
+    */
 }
 
-header p {
-    color: #1792D2;
+nav li {
+    /* border: 2px dotted orange; */
+
+    /* ... So we will instead space out our 
+    <li> elements by adding margin */
+    margin: 0 1em;
 }
 
+nav a {
+    /* border: 3px solid green; */
+}
+
+nav a:hover {
+      
+}
