@@ -1,0 +1,36 @@
+/*  Fonts
+    -----
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', sans-serif;
+ */
+
+body {
+    
+}
+
+.site-title h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.375rem;
+    color: #143774;
+}
+
+header {
+    background: #F8F8F8;
+}
+
+.subtitle, nav ul li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+nav ul li {
+    color: #707070;
+    list-style: none;
+}
+
+header p {
+    color: #1792D2;
+}
+
