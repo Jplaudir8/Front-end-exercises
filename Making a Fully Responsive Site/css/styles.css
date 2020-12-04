@@ -7,27 +7,84 @@
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
+img {
+    /* These two are very very important 
+    and you may be applying them all the 
+    time to img tags. */
+    max-width: 100%;
+    display: block;
+}
 
 /* ==================
     Typography
    ================== */
 
-h1 {
+h1, 
+h2,
+h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
+}
+
+h1 {
     font-size: 2rem;
     margin: 0;
 }
 
+a {
+    color: #1792d2;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* h1 subtitle */
 .subtitle {
     font-weight: 700; /* designers call it as bold */
     color: #1792d2;
     font-size: .75rem;
     margin: 0;
 }
+
+.article-title {
+    font-family: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+
 
 /* ==================
     Layout
@@ -39,25 +96,37 @@ h1 {
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 header {
     background: #f8f8f8;
     padding: 2em 0; /* 1em=16px */
+    text-align: center;
 }
 
-@media (max-width: 720px) {
-    .container-nav {
-        flex-direction: column;
+@media (min-width: 720px) {
+
+    .container-flex {
+        flex-direction: row;
     }
 
     header {
-        text-align: center;
+        text-align: left;
+    }
+
+    main {
+        width: 75%;
+    }
+    
+    aside {
+        width: 20%;
     }
 }
+
 
 /* navigation */
 
@@ -123,5 +192,43 @@ nav a:focus {
 
     nav li {
         margin: .5em 0;
+    }
+}
+
+/* articles */
+
+.article-featured {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+}
+
+/* In flex children we can use the order property to rearrange them.
+In this case we used the order property as our html meaningful order
+is first titles and then images or first main contents and then secondary 
+ones. Always write HTML as if there wont be any CSS applied! 
+If two order properties have the same value, they will appear as in the 
+way it was written in the HTML. We can also have negative values. */
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+@media (min-width: 550px) {
+    .article-recent-main {
+        margin-top: -2.5em;
+    }
+
+    .article-info {
+        text-align: right;
     }
 }
