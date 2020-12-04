@@ -19,6 +19,13 @@ img {
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* ==================
     Typography
    ================== */
@@ -35,6 +42,10 @@ h3 {
 h1 {
     font-size: 2rem;
     margin: 0;
+}
+
+h3 {
+    color: #1792d2;
 }
 
 a {
@@ -77,14 +88,26 @@ strong {
 .article-read-more:focus {
     color: #143774;
     text-decoration: underline;
-    font-weight: 700;
 }
 
 .article-info {
     margin: 2em 0;
 }
 
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
 
+.widget-title {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.widget-recent-post-title {
+    color: #143774;
+}
 
 /* ==================
     Layout
@@ -106,10 +129,17 @@ header {
     background: #f8f8f8;
     padding: 2em 0; /* 1em=16px */
     text-align: center;
+    margin-bottom: 3em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
 }
 
 @media (min-width: 720px) {
-
     .container-flex {
         flex-direction: row;
     }
@@ -119,11 +149,13 @@ header {
     }
 
     main {
-        width: 75%;
+        width: 70%;
     }
     
     aside {
-        width: 20%;
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
     }
 }
 
@@ -223,12 +255,59 @@ way it was written in the HTML. We can also have negative values. */
     order: 1;
 }
 
-@media (min-width: 550px) {
-    .article-recent-main {
-        margin-top: -2.5em;
+@media(min-width: 720px){
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .article-info {
-        text-align: right;
+    .article-recent-main {
+        width: 67%;
     }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-featured .article-info {
+        order: -1;
+    }
+
+    .article-image {
+        order: -2;
+        min-height: 250px;
+        object-fit: cover;
+    }
+}
+
+/* widgets */
+
+.sidebar-widget {
+    border: 20px solid #EBEBEB;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+/* Note that :last-child makes reference to the 
+last html child in the group, not the last html
+child of type ".widget-recent-post" */
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-recent-post .widget-image {
+    order: -1;
 }
