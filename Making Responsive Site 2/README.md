@@ -1,6 +1,6 @@
 # Layout Arrangement
 
-### Home Page
+### Form Page
 
 <p align="center">
     <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Making%20Responsive%20Site%202/ArrangementOfPage1_NoBoxes.png" width="500" alt="" title="Arrangement">
