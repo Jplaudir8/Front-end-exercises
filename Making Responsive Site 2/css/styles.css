@@ -1,5 +1,9 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -8,9 +12,16 @@ body {
     text-align: center;
 }
 
+
+/* ===============================
+    Typography
+   =============================== */
+
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
+    color: #FFF;
+    margin: 0;
 }
 
 /* 
@@ -22,6 +33,7 @@ h1 + p {
     color: #f18119;
     font-weight: 900;
     font-size: 1.3125rem;
+    margin: 0;
 }
 /*
     As well as we had that combinator selector
@@ -45,12 +57,15 @@ h1 + p {
 
 h2 {
     font-size: 1.3125rem;
+    margin: 0;
 }
 
 h2 + p {
     color: #F18119;
     font-weight: 900;
     font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
@@ -59,6 +74,7 @@ h2 + p {
     font-weight: 900;
     color: #f18119;
     text-transform: uppercase;
+    order: -1;
 }
 
 .fine-print {
@@ -70,3 +86,78 @@ strong {
     font-weight: 900;
 }
 
+
+/* ===============================
+    Intro Section
+   =============================== */ 
+
+.intro {
+    background-image: url(../img/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #404040;
+    padding: 0 .5em 2em;
+}
+
+
+/* ===============================
+   main-content section 
+   ===============================  */
+
+.main-content {
+    /* border: 1px solid black; */
+    padding: 2em 1em;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* ===============================
+   media queries
+   ===============================  */
+
+@media (min-width: 680px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .main-content {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-intro {
+        height: 100%;
+    }
+}
