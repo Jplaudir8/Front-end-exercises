@@ -15,7 +15,7 @@
             <p class="top-text">Mouthwateringly delicious</p>
         </div>
     </div>
-    <div class="main-content">
+    <div id="Main-Content" class="main-content">
         <div class="container">
             <h2>Become a BBQ master!</h2>
             <p>Register Today</p>
@@ -23,12 +23,14 @@
                 blast and hoping for the best. It's an art! One way to speed 
                 up the process is to learn from the best. You can do just that 
                 by signing up for this free webinar!</p>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname">
-            <input type="text">
-            <button type="submit">register</button>
+            <form id="Email-Collector" class="email-collector" action="#" method="POST">
+                <input name="firstName" type="text" placeholder="first name" required>
+                <input name="emailAddress" type="email" placeholder="e-mail" required>
+                <button class="btn btn-primary" type="submit">Register</button>
+            </form>
             <p class="fine-print">We'll never share your information without your permission</p>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

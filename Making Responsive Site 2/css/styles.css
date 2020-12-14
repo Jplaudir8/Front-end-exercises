@@ -71,10 +71,14 @@ h2 + p {
 
 .top-text {
     font-size: 0.625rem;
+    margin: 0 auto;
+    padding-top: 2px;
     font-weight: 900;
     color: #f18119;
     text-transform: uppercase;
     order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -119,6 +123,61 @@ strong {
     flex-direction: column;
     justify-content: space-between;
     min-height: 50vh;
+}
+
+
+/* ===============================
+   main-content section 
+   ===============================  */
+
+.email-collector {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input,
+.btn {
+    width: 100%; 
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .5em;
+    border: .5px #404040 solid;
+    transition: transform 250ms;
+}
+
+input:hover,
+input:focus {
+    transform: scale(1.03);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #ffa51d, #ff713b); /* If you use the word 'background' will be the same */
+    color: white;
+    transition: color 1s;
+    transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: black;
+    transform: scale(1.03);
 }
 
 /* ===============================
