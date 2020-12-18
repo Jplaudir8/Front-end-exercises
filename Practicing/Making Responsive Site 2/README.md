@@ -4,7 +4,7 @@
 
 <div style="display:flex">
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Making%20Responsive%20Site%202/ArrangementOfPage1_NoBoxes2.png width="600" alt="" title="Arrangement">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Making%20Responsive%20Site%202/ArrangementOfPage1_NoBoxes2.png" width="600" alt="" title="Arrangement">
 </p>
 
 <p align="center">
