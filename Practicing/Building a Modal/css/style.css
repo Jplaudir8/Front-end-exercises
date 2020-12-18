@@ -40,6 +40,10 @@ body {
 
 }
 
+#overlay p {
+    margin-bottom: 3em;
+}
+
 #modal {
     /* background: #E8C892; */
     background: white;

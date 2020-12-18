@@ -11,4 +11,3 @@ closeModalBtn.addEventListener("click", function() {
     console.log("Closed Modal");
     document.getElementById("overlay").style.display = "none";
 });
-
