@@ -15,7 +15,7 @@
     --red-color: #c72727;
 }
 
-#index{
+#index {
     font-family: 'Raleway', sans-serif;
     background-color: var(--dark-green-color);
     color: var(--black-color);
@@ -90,8 +90,8 @@ a {
     
 } */
 
-
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:focus {
     color: var(--light-gray-color);
 }
 
@@ -117,8 +117,8 @@ a {
 .circles {
   text-align: center;
   position: absolute;
-  top:95%;
-  left: 47.5%;
+  top: 95%;
+  width: 100%;
 }
 
 /* Next & previous buttons */
