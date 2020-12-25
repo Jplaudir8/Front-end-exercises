@@ -301,7 +301,7 @@ a.current {
 }
 
 .grid-container__links {
-  padding: 30px;
+  margin: 2em 0;
 }
 
 .grid-container__text {
@@ -454,3 +454,38 @@ a.current {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+
+/**************************************************************************
+  Menu Page
+***************************************************************************/
+
+.parallax-image {
+  background-image: url(../image_resources/hero_4.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+@media (max-width: 680px) {
+  .grid-container__links {
+    display: none;
+  }
+  
+}
+
+.btn-transparent {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+/**************************************************************************
+  Our Story Page
+***************************************************************************/
+
+
+
+/**************************************************************************
+  Locations Page
+***************************************************************************/
+
