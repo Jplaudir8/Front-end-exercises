@@ -1,5 +1,6 @@
-/* Carousel */
-
+/**************
+Carousel 
+***************/
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -37,4 +38,15 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active"; // Changes dot color to look active.
 }
 
-/* Carousel EOF */
+
+/**************
+Google Maps API
+***************/
+
+function initMap() {
+    let location = { lat: -34.397, lng: 150.644 };
+    let map = new google.maps.Map(document.getElementById("google-map"), {
+        zoom: 2,
+        center: location
+    });
+}

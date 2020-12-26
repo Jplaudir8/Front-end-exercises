@@ -463,11 +463,14 @@ a.current {
 ***************************************************************************/
 
 .parallax-image {
-  background-image: url(../image_resources/hero_4.png);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 50vh;
+}
+
+.parallax-image-hero-4 {
+  background-image: url(../image_resources/hero_4.png);
 }
 
 .main-page-title {
@@ -486,12 +489,11 @@ a.current {
   margin-right: 1.5em;
   width: 60%;
   min-width: 150px;
-  float: left;
 
   position: -webkit-sticky;
   position: sticky;
   top: 120px; /* for sticky to work we need to use a coordinate, in this case top: 120px; */
-  align-self: flex-start; /* enables back the ability to use position: sticky; .container__links is a flex item, its align-item property is setting it to stretch which cancels the sticky property.*/
+  align-self: flex-start; /* enables back the ability to use position: sticky; .container__links is a flex item, its align-item property is setting it to stretch which cancels the sticky property. Reference: https://www.digitalocean.com/community/tutorials/css-position-sticky */
 }
 
 .container__menu {
@@ -504,13 +506,13 @@ a.current {
 }
 
 @media (max-width: 880px) {
-  .parallax-image {
-    height: 40vh;
-  }
   #pages-body {
     width: 90%;
     margin: 20px auto 50px;
     padding: 40px 20px;
+  }
+  .parallax-image {
+    height: 40vh;
   }
   .menu-wrapper {
     width: 85%;
@@ -567,9 +569,69 @@ a.current {
   Our Story Page
 ***************************************************************************/
 
+.parallax-image-hero-5 {
+  background-image: url(../image_resources/hero_5.png);
+}
 
+.our-mission-intro {
+  margin-bottom: 4em;
+}
+
+.mission-section {
+  margin-top: 2em;
+}
+
+.mission-section-title {
+  margin-bottom: 1em;
+}
+
+.our-mission-team {
+  margin: 2em auto;
+  width: 90%;
+}
+
+.our-mission-team h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-members img {
+  display: inline-block;
+  width: 30%;
+}
 
 /**************************************************************************
   Locations Page
 ***************************************************************************/
 
+#google-map {
+  height: 50vh;
+  width: 100%;
+  background-image: rgba(104, 104, 104, 1);
+}
+
+.container-links-and-sections {
+  display: flex;
+}
+
+.location-section-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.location-section-title {
+  border-bottom: 1px solid black;
+  padding-bottom: .4em;
+}
+
+.image-guide {
+  width: 50%;
+}
