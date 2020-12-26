@@ -29,7 +29,10 @@
   color: var(--black-color);
 }
 
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   line-height: 1.5;
@@ -443,7 +446,7 @@ a.current {
   width: 100px;
 }
 
-/* Copyright */
+/********************** Copyright ***********************/
 
 #main-footer .footer-container > *:last-child {
   display: grid;
@@ -464,7 +467,7 @@ a.current {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
 }
 
 .main-page-title {
@@ -484,16 +487,29 @@ a.current {
   width: 60%;
   min-width: 150px;
   float: left;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px; /* for sticky to work we need to use a coordinate, in this case top: 120px; */
+  align-self: flex-start; /* enables back the ability to use position: sticky; .container__links is a flex item, its align-item property is setting it to stretch which cancels the sticky property.*/
 }
 
 .container__menu {
   margin-left: 1.5em;
 }
 
+#pages-body {
+  max-width: 1200px;
+  margin: 20px auto 50px;
+}
+
 @media (max-width: 880px) {
+  .parallax-image {
+    height: 40vh;
+  }
   #pages-body {
     width: 90%;
-    margin: 20px 0 50px;
+    margin: 20px auto 50px;
     padding: 40px 20px;
   }
   .menu-wrapper {
@@ -511,6 +527,9 @@ a.current {
   #pages-body {
     width: 100%;
     padding: 40px 10px;
+  }
+  .parallax-image {
+    height: 30vh;
   }
 }
 
