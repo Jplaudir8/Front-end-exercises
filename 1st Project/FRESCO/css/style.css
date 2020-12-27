@@ -360,7 +360,8 @@ a.current {
   grid-template-columns: repeat(5, 1fr);
 }
 
-#main-footer h3,a {
+#main-footer h3,
+#main-footer a {
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   font-size: 16px;
@@ -410,7 +411,7 @@ a.current {
 }
 
 .main-footer__newsletter input[type='submit'] {
-  width:75%;
+  width: 75%;
 }
 
 
@@ -619,6 +620,7 @@ a.current {
 
 .container-links-and-sections {
   display: flex;
+  margin-top: 4em;
 }
 
 .location-section-content {
@@ -634,4 +636,69 @@ a.current {
 
 .image-guide {
   width: 50%;
+}
+
+/**************************************************************************
+  Modal
+***************************************************************************/
+
+/* #open-modal-btn, */
+#close-modal-btn {
+    color: white;
+    background: royalblue;
+    padding: .8em 1.5em;
+    font-size: .7rem;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#open-modal-btn:hover,
+#open-modal-btn:focus,
+#close-modal-btn:hover,
+#close-modal-btn:focus {
+    background: rgb(72, 117, 253);
+}
+
+#overlay {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+#overlay p {
+}
+
+#modal {
+    /* background: #E8C892; */
+    background: white;
+    padding: 1.5em;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    position: relative; /* so the modal is relative to the overlay (just because overlay is set to position: absolute) */
+    top: 30%;
+}
+
+#faddress-lbl {
+  font-weight: bolder;
+  display: block;
+}
+
+#faddress {
+  display: block;
+  width: 80%;
+  height: 30px;
+}
+
+.pop-up-login-link {
+  color: var(--light-green-color);
+  font-size: .8rem;
 }

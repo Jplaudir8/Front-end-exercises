@@ -1,5 +1,5 @@
 /**************
-Carousel 
+ Carousel 
 ***************/
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -40,7 +40,26 @@ function showSlides(n) {
 
 
 /**************
-Google Maps API
+ Modal
+***************/
+
+let openModalBtn = document.getElementById("open-modal-btn");
+
+openModalBtn.addEventListener("click", function() {
+    console.log("Opened Modal");
+    document.getElementById("overlay").style.display = "block";
+    document.body.style.backgroundColor = "black";
+});
+
+let closeModalBtn = document.getElementById("close-modal-btn");
+
+closeModalBtn.addEventListener("click", function() {
+    console.log("Closed Modal");
+    document.getElementById("overlay").style.display = "none";
+});
+
+/**************
+ Google Maps API
 ***************/
 
 function initMap() {
@@ -50,3 +69,4 @@ function initMap() {
         center: location
     });
 }
+

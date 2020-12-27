@@ -28,17 +28,16 @@
                     <li><a href="/locations.html">Locations</a></li>
                     <li><a href="/catering.html">Catering</a></li>
                     <li><a href="/health&safety.html">Health & Safety</a></li>
-                    <li><a href="#"><span>Order Now</span></a></li>
+                    <!-- <li><button id="open-modal-btn">Order Now</button></li>  -->
                 </ul>
             </nav>
         </div>
-
+        
         <div class="parallax-image parallax-image-hero-4">
-
         </div>
 
     </header>
-
+    <button id="open-modal-btn">Open</button>
     <section id="pages-body">
         <div class="main-page-title">
             <h1>Our Menu</h1>
@@ -178,6 +177,35 @@
 
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="overlay">
+        
+        <div id="modal">
+            <h2>Order Now!</h2>
+            <p>Enter your address below, and we'll route you to the nearest Fresco.</p>
+            <form action="" method="POST" enctype="text/plain">
+                <label id="faddress-lbl" for="faddress">ADDRESS</label>
+                <input id="faddress" type="text">
+
+                <!-- Radio Buttons -->
+                <div>
+                    <label id="radio-option1-lbl" for="radio-option1">ASAP</label>
+                    <input id="radio-option1" type="radio" name="order-time">
+
+                    <label id="radio-option2-lbl" for="radio-option2">SOME OTHER TIME</label>
+                    <input id="radio-option2" type="radio" name="order-time">
+                </div>
+                <!-- End radio buttons -->
+                
+                <button type="submit">NEXT</button>
+            </form>
+            <p class="pop-up-login-link">Already have an account with us? Log in <strong><a href="#">here</a></strong>.</p>
+            <button id="close-modal-btn">Close!</button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
