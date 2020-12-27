@@ -687,15 +687,72 @@ a.current {
     top: 30%;
 }
 
+.modal-border {
+  border: 1px solid black;
+  padding: 2em;
+}
+
+.modal-border h2 {
+  text-align: center;
+  margin-top: .8em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.modal-border p {
+  margin-bottom: 1.5em;
+}
+
+.modal-border button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: .9px solid black;
+  border-radius: 0;
+  margin: 2em 0;
+  padding: 1em 4em;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}
+
+.modal-radio-inputs {
+  margin: 2.5em 0;
+  font-size: .7em;
+  font-weight: 500;
+}
+
+.modal-radio-inputs input {
+  background-color: black; /* To be checked, not working on the radio inputs */
+}
+
+#radio-option2 {
+  margin-left: 3em;
+}
+
+.pop-up-login-link {
+  margin: .8em 0;
+}
+
 #faddress-lbl {
   font-weight: bolder;
+  font-size: .8em;
   display: block;
+  margin-bottom: .5em;
 }
 
 #faddress {
   display: block;
-  width: 80%;
-  height: 30px;
+  width: 100%;
+  height: 40px;
+  border: .9px solid black;
+  padding: .5em .5em;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .pop-up-login-link {
