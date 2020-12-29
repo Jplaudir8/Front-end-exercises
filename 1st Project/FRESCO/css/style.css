@@ -675,22 +675,23 @@ a.current {
 }
 
 #modal {
-    /* background: #E8C892; */
     background: var(--white-color);
+    margin: 6em auto;
     padding: 1.5em;
-    margin: 0 auto;
     width: 75%;
     max-width: 600px;
-    position: relative; /* so the modal is relative to the overlay (just because overlay is set to position: absolute) */
-    top: 20%;
+    /* position: relative;
+    top: 15%; */
+    animation-name: modalopen;
+    animation-duration: 0.7s;
 }
 
-.modal-border {
+.modal-content {
   border: 1px solid black;
   padding: 1.5em 2em;
 }
 
-.modal-border h2 {
+.modal-content h2 {
   clear: right;
   text-align: center;
   margin-top: .8em;
@@ -699,11 +700,11 @@ a.current {
   font-size: 2rem;
 }
 
-.modal-border p {
+.modal-content p {
   margin-bottom: 1.5em;
 }
 
-.modal-border button {
+.modal-content button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -770,4 +771,9 @@ a.current {
 .pop-up-login-link {
   color: var(--light-green-color);
   font-size: .8rem;
+}
+
+@keyframes modalopen {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }

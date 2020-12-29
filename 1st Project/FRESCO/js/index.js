@@ -22,6 +22,17 @@ function clickOutside (e) {
     }
 }
 
+/**************
+ Google Maps API
+***************/
+
+function initMap() {
+    let location = { lat: -34.397, lng: 150.644 };
+    let map = new google.maps.Map(document.getElementById("google-map"), {
+        zoom: 2,
+        center: location
+    });
+}
 
 /**************
  Carousel 
@@ -41,7 +52,7 @@ function currentSlide(n) {
 
 // Helper method
 function showSlides(n) {
-    console.log("n = " + n + " and slideIndex = " + slideIndex);
+    // console.log("n = " + n + " and slideIndex = " + slideIndex);
     var slides = document.getElementsByClassName("mySlides"); // currently 3 slides
     var dots = document.getElementsByClassName("dot"); // currently 3 dots
 
@@ -63,15 +74,5 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active"; // Changes dot color to look active.
 }
 
-/**************
- Google Maps API
-***************/
 
-function initMap() {
-    let location = { lat: -34.397, lng: 150.644 };
-    let map = new google.maps.Map(document.getElementById("google-map"), {
-        zoom: 2,
-        center: location
-    });
-}
 
