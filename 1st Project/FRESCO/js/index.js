@@ -1,4 +1,29 @@
 /**************
+ Modal
+***************/
+let overlay = document.getElementById("overlay");
+let openModalBtn = document.getElementById("open-modal-btn");
+let closeModalBtn = document.getElementsByClassName("closeBtn")[0];
+
+openModalBtn.addEventListener("click", function() {
+    overlay.style.display = "block";
+});
+
+closeModalBtn.addEventListener("click", function() {
+    overlay.style.display = "none";
+});
+
+// Listen for outside click
+window.addEventListener("click", clickOutside);
+
+function clickOutside (e) {
+    if (e.target == overlay) {
+        overlay.style.display = "none";
+    }
+}
+
+
+/**************
  Carousel 
 ***************/
 var slideIndex = 1;
@@ -36,34 +61,6 @@ function showSlides(n) {
     
     slides[slideIndex - 1].style.display = "block"; // Shows desired image.
     dots[slideIndex - 1].className += " active"; // Changes dot color to look active.
-}
-
-
-/**************
- Modal
-***************/
-let overlay = document.getElementById("overlay");
-let openModalBtn = document.getElementById("open-modal-btn");
-let closeModalBtn = document.getElementById("close-modal-btn");
-
-openModalBtn.addEventListener("click", function() {
-    console.log("Opened Modal");
-    overlay.style.display = "block";
-    document.body.style.backgroundColor = "black";
-});
-
-closeModalBtn.addEventListener("click", function() {
-    console.log("Closed Modal");
-    overlay.style.display = "none";
-});
-
-// Listen for outside click
-window.addEventListener('click', clickOutside);
-
-function clickOutside (e) {
-    if (e.target == overlay) {
-        overlay.style.display = "none";
-    }
 }
 
 /**************
