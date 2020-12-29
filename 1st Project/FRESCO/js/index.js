@@ -42,21 +42,29 @@ function showSlides(n) {
 /**************
  Modal
 ***************/
-
+let overlay = document.getElementById("overlay");
 let openModalBtn = document.getElementById("open-modal-btn");
+let closeModalBtn = document.getElementById("close-modal-btn");
 
 openModalBtn.addEventListener("click", function() {
     console.log("Opened Modal");
-    document.getElementById("overlay").style.display = "block";
+    overlay.style.display = "block";
     document.body.style.backgroundColor = "black";
 });
 
-let closeModalBtn = document.getElementById("close-modal-btn");
-
 closeModalBtn.addEventListener("click", function() {
     console.log("Closed Modal");
-    document.getElementById("overlay").style.display = "none";
+    overlay.style.display = "none";
 });
+
+// Listen for outside click
+window.addEventListener('click', clickOutside);
+
+function clickOutside (e) {
+    if (e.target == overlay) {
+        overlay.style.display = "none";
+    }
+}
 
 /**************
  Google Maps API
