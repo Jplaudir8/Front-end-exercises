@@ -1,11 +1,11 @@
-# Layout Arrangement
+# Mobile View
 
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Reviewing%20Flexbox/Arrangement.png" width="900" alt="" title="Arrangement">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Making%20a%20card%20component%20with%20Flexbox/Image-1.png" width="400" alt="" title="Arrangement">
 </p>
 
-# Color Scheme and Fonts
+# Desktop View & Typography
 
 <p align="center">
-    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Reviewing%20Flexbox/ColorandFontScheme.png" width="200" alt="" title="Color and Font Scheme">
+    <img src="https://github.com/Jplaudir8/Front-end-exercises/blob/master/Practicing/Making%20a%20card%20component%20with%20Flexbox/Image-2.png" width="800" alt="" title="Color and Font Scheme">
 </p>
