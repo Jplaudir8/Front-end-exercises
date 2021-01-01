@@ -1,0 +1,28 @@
+.card {
+    background: skyblue;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card-title,
+.card-read-time,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.75rem; /* we want it to be 28px, so we divided 28/16 (remember 1em = 16px) */
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-body {
+    font-size: 1rem; /* we want it to be 16px */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-btn {
+    font-size: 1.25rem; /* We want 20px so 20/16 = 1.25rem */
+}
+
