@@ -16,22 +16,48 @@
 
 <body id="pages">
     <header id="main-header">
-        <div class="navbar">
-            <div class="navbar__logo-box">
-                <a href="/index.html"><img src="image_resources/fresco_logo_1.png" alt="logo" class="navbar-logo"></a>
-            </div>
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30" >
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+                </a>
+            </span>
 
-            <nav>
-                <ul>
-                    <li><a class="current" href="#">Menu</a></li>
-                    <li><a href="/our-story.html">Our Story</a></li>
-                    <li><a href="/locations.html">Locations</a></li>
-                    <li><a href="/catering.html">Catering</a></li>
-                    <li><a href="/health&safety.html">Health & Safety</a></li>
-                    <li><button id="open-modal-btn">Order Now</button></li>
-                </ul>
-            </nav>
-        </div>
+          <a href="/index.html"><img src="image_resources/fresco_logo_1.png" alt="logo" class="navbar-logo"></a>
+      
+          <div class="navbar-nav">
+            <ul>
+                <li><a class="current" href="/menu.html">Menu</a></li>
+                <li><a href="/our-story.html">Our Story</a></li>
+                <li><a href="/locations.html">Locations</a></li>
+                <li><a href="/catering.html">Catering</a></li>
+                <li><a href="/health&safety.html">Health & Safety</a></li>
+            </ul>
+          </div>
+
+          <button id="open-modal-btn" class="order-btn">Order Now</button>
+
+
+    
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <ul>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/our-story.html">Our Story</a></li>
+            <li><a href="/locations.html">Locations</a></li>
+            <li><a href="/catering.html">Catering</a></li>
+            <li><a href="/health&safety.html">Health & Safety</a></li>
+            <li><a href="#"><span>Order Now</span></a></li>
+        </ul>
+      </div>
+    
+
+    </nav>
+
         
         <div class="parallax-image parallax-image-hero-4">
         </div>
@@ -205,6 +231,7 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
 </body>
 

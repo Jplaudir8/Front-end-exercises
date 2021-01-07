@@ -46,58 +46,161 @@ a {
     color: var(--black-color);
 }
 
+
 /* Header - Navbar */
 
 #main-header {
-    position: relative;
+  position: relative;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--secondary-color-light);
-    position: fixed;
-    width: 100%;
-    padding:0 96px;
-    z-index: 1;
-    opacity: .9; 
-}
+nav.navbar {
+  background-color: var(--primary-color-dark);
+  overflow:hidden;
+  display: flex;
+  height:80px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 14px 0;
+  opacity: .9;
+  }
 
-.navbar__logo-box {
-    padding: 20px 0;
-}
- 
 .navbar-logo {
-    height: 48px;
+  height: 50px;
+  position: absolute;
+  left: 60px;
 }
 
-.navbar ul {
-    display: flex;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
+.nav-order {
+  padding: 14px 0;
+
 }
 
-.navbar a {
-    padding: 16px 32px;
+
+.nav-order a{
+  font-weight: 700;
+  color: var(--dark-green-color);
 }
 
-.navbar ul span {
-  padding: 5px;
+.navbar-nav {
+  margin-left: 200px;
+}
+
+.navbar-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.navbar-nav ul li {
+  padding: 0 14px;
+}
+
+
+.navbar-nav a{
+  color: var(--black-color);
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 500;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.navbar-nav ul li span{
   font-size: 18px;
-  font-weight: 800;
+  color: var(--dark-green-color);
 }
 
-/* .navbar a:hover {
-    border-bottom: var(--light-green-color) 1px solid;
-    
-} */
+.navbar ul{
+  margin:14px 0;
+}
 
-.navbar a:hover,
-.navbar a:focus {
-    color: var(--light-gray-color);
+.navbar a:hover{
+  color: var(--light-green-color);
+}
+
+svg {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  display: none;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: var(--dark-green-color);
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition: all 0.2s ease;
+}
+
+.side-nav a {
+  color: var(--secondary-color-light);
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 500;
+}
+
+.side-nav ul li a {
+  padding:10px 10px 10px 30px;
+  width: 100%;
+  text-decoration:none;
+  font-size:16px;
+  color: var(--primary-color-dark);
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  transition:0.3s;
+  text-align: left;
+}
+
+.side-nav ul li a:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--light-green-color)
+}
+
+.side-nav .btn-close {
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main {
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+/* Order Button */
+
+.order-btn {
+  background-color: var(--primary-color-dark);
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  color: var(--light-green-color);
 }
 
 /* Slideshow container */
@@ -651,14 +754,13 @@ a.current {
     background: transparent;
     border-style: none;
     cursor: pointer;
-    margin-left: 7em;
 }
 
 #open-modal-btn:hover,
 #open-modal-btn:focus,
 #close-modal-btn:hover,
 #close-modal-btn:focus {
-    color: var(--light-gray-color);
+    color: var(--light-green-color);
 }
 
 #overlay {
@@ -670,7 +772,7 @@ a.current {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -776,4 +878,49 @@ a.current {
 @keyframes modalopen {
   from { opacity: 0 }
   to { opacity: 1 }
+}
+
+
+/**************************************************************************
+  Navbar (media query)
+***************************************************************************/
+
+@media only screen and (max-width: 1080px) {
+  
+  nav.navbar {
+    justify-content: center;
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    position: relative;
+    left: 0;
+  }
+  
+  .nav-order {
+    padding: 0;
+  }
+  
+  .nav-order a,
+  .navbar-nav ul,
+  .order-btn {
+    display: none;
+  }
+  
+  .navbar-nav {
+    margin-left: 0;
+  }
+  
+  svg {
+    display: block;
+  }
+  
+  
+  .navbar ul{
+    margin:0;
+  }
+  
+  .navbar a:hover{
+    color: var(--light-green-color);
+  }
 }

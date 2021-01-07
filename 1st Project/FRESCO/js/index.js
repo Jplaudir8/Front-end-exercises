@@ -38,28 +38,18 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active"; // Changes dot color to look active.
 }
 
+
+
 /**************
- Modal
+Side NavBar
 ***************/
-let overlay = document.getElementById("overlay");
-let openModalBtn = document.getElementById("open-modal-btn");
-let closeModalBtn = document.getElementsByClassName("closeBtn")[0];
 
-openModalBtn.addEventListener("click", function() {
-    overlay.style.display = "block";
-});
+function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '250px';
+    document.getElementById('main').style.marginLeft = '250px';
+  }
 
-closeModalBtn.addEventListener("click", function() {
-    overlay.style.display = "none";
-});
-
-// Listen for outside click
-window.addEventListener("click", clickOutside);
-
-function clickOutside (e) {
-    if (e.target == overlay) {
-        overlay.style.display = "none";
-    }
-}
-
-
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0';
+  }
