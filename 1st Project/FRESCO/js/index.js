@@ -39,7 +39,6 @@ function showSlides(n) {
 }
 
 
-
 /**************
 Side NavBar
 ***************/
