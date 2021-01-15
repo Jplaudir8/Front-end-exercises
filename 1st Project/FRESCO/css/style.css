@@ -433,7 +433,7 @@ a.current {
 ***************************************************************************/
 
 #pages h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -645,6 +645,10 @@ a.current {
   position: sticky;
   top: 120px; /* for sticky to work we need to use a coordinate, in this case top: 120px; */
   align-self: flex-start; /* enables back the ability to use position: sticky; .container__links is a flex item, its align-item property is setting it to stretch which cancels the sticky property. Reference: https://www.digitalocean.com/community/tutorials/css-position-sticky */
+}
+
+.container__links li {
+  margin-bottom: .7em;
 }
 
 .container__menu {
