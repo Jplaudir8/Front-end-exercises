@@ -451,6 +451,10 @@ a.current {
   font-weight: 500;
 }
 
+.parallax-image-hero-7 {
+  background-image: url(../image_resources/hero_7.jpg);
+}
+
 /* ---------------------------------------------------------------- */
 
 
